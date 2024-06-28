@@ -1,0 +1,36 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    overflow-y: auto;
+    max-height: calc(90vh - 60px); /* Adjust based on your needs */
+  }
